@@ -32,3 +32,54 @@ step 3 - explore the files using common forensics binaries (file, strings etc). 
 step 4 - `strings I Warned You.jpeg` and flag found!
 
 flag: **CTF{Du$t1nS_D0jo}**
+
+## Up For A Little Challenge?
+step 1 - downlad the picture:
+https://mega.nz/file/LoABFK5K#0sEKbsU3sBUG8zWxpBfD1bQx_JY_MuYEWQvLrFIqWZ0
+
+step 2 - check strings:
+`strings Begin\ Hack.jpg` has a few clues:
+- flag{Not_So_Simple...}
+- password: Really? Again
+- real_unlock_key: Nothing Is As It SeemsU
+- https://mega.nz/#!z8hACJbb!vQB569ptyQjNEoxIwHrUhwWu5WCj1JWmU-OFjf90Prg
+
+step 3 - download the zip file and unzip it
+
+step 4 - extract zip file:
+ 
+`\- .Processing.cerb4` is password protected, used the clue from the first step "Nothing Is As It Seems" as the password.
+
+step 5 - open pictue and you can see a small text in the corner of the picture the flag
+
+flag: flag{hack_complete}
+
+## Digital Camouflage
+step 1 - downlad the pcap:
+https://mega.nz/file/XDBDRAQD#4jRcJvAhMkaVaZCOT3z3zkyHre2KHfmkbCN5lYpiEoY
+
+step 2 - export http objects
+
+step 3 - in file main we can we see an auth password with url encode and base64 (pswrd=UEFwZHNqUlRhZQ%3D%3D)
+
+flag: **PApdsjRTae**
+
+## Milk's Best Friend
+step 1 - downlad the picture:
+https://mega.nz/#!DC5F2KgR!P8UotyST_6n2iW5BS1yYnum8KnU0
+
+step 2 - extract hidden files:
+`binwalk -e oreo.jpg`
+
+step 3 - strings on files
+`strings b.jpg`
+
+flag: **flag{eat_more_oreos}**
+
+## Milk's Best Friend
+step 1 - downlad the picture:
+
+step 2 - open wireshark:
+we can see there is a msg encoded with base64.. this is suspicious. let's decode it ZmxhZ3tBRmxhZ0luUENBUH0=
+
+flag: **flag{AFlagInPCAP}**
