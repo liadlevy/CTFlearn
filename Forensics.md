@@ -76,8 +76,8 @@ step 3 - strings on files
 
 flag: **flag{eat_more_oreos}**
 
-## Milk's Best Friend
-step 1 - downlad the picture:
+## A CAPture of a Flag
+step 1 - downlad the pcap:
 
 step 2 - open wireshark:
 we can see there is a msg encoded with base64.. this is suspicious. let's decode it ZmxhZ3tBRmxhZ0luUENBUH0=
