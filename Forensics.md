@@ -52,7 +52,7 @@ step 4 - extract zip file:
 
 step 5 - open pictue and you can see a small text in the corner of the picture the flag
 
-flag: flag{hack_complete}
+flag: **flag{hack_complete}**
 
 ## Digital Camouflage
 step 1 - downlad the pcap:
