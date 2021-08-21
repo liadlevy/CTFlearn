@@ -15,5 +15,6 @@ xxd unopenable.gif | xxd -r -s 4 > new_gif.gif;
 data="GIF8"; 
 echo -n $data | xxd -p | xxd -r -p - new_gif.gif
 `
+
 step 4 - gif with 3 base64 strings (base64 usually ends with ==). Decode it ZmxhZ3tnMWZfb3JfajFmfQ and you'll get the flag! 
 flag: **flag{g1f_or_j1f}**
