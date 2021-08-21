@@ -78,8 +78,36 @@ flag: **flag{eat_more_oreos}**
 
 ## A CAPture of a Flag
 step 1 - downlad the pcap:
+https://mega.nz/file/3WhAWKwR#1T9cw2srN2CeOQWeuCm0ZVXgwk-E2v-TrPsZ4HUQ_f4
 
 step 2 - open wireshark:
 we can see there is a msg encoded with base64.. this is suspicious. let's decode it ZmxhZ3tBRmxhZ0luUENBUH0=
 
 flag: **flag{AFlagInPCAP}**
+
+# Easy
+## Forensics 101
+step 1 - downlad picture:
+https://mega.nz/file/OHohCbTa#wbg60PARf4u6E6juuvK9-aDRe_bgEL937VO01EImM7c
+
+step 2 - `strings` on the file 
+
+flag: **flag{wow!_data_is_cool}**
+
+## Binwalk
+step 1 - downlad picture:
+https://mega.nz/#!qbpUTYiK!-deNdQJxsQS8bTSMxeUOtpEclCI-zpK7tbJiKV0tXYY
+
+step 2 - extract hidden photo:
+`binwalk  -D=".*" '/root/ctflearn/PurpleThing.jpeg'`
+
+flag: **ABCRF{b1nw4lk_is_us3ful}**
+
+## Git Is Good
+step 1 - download folder:
+https://mega.nz/file/3CwDFZpJ#Jjr55hfJQJ5-jspnyrnVtqBkMHGJrd6Nn_QqM7iXEuc
+
+step 2 - use git commands on the folder to find the flag
+`git show`
+
+flag: **flag{protect_your_git}**
