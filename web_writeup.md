@@ -27,3 +27,13 @@ step 3 - there is a referer filter too (Sorry, it seems as if you did not just c
 -  `wget -U "Sup3rS3cr3tAg3nt" "http://165.227.106.113/header.php" --referer "awesomesauce.com" -O -`
 
 flag: **flag{did_this_m3ss_with_y0ur_h34d}**
+
+#  HARD
+## Inj3ction Time
+step 1 - using jsql to automate the sql injection
+- put the https://web.ctflearn.com/web8/?id= in the url
+
+step 2 - sql injection was successful and we got the DB
+- open the table webeight.w0w_y0u_f0und_m3 and we found the flag!
+
+flag: **abctf{uni0n_1s_4_gr34t_c0mm4nd}**
